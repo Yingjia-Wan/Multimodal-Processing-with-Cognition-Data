@@ -12,6 +12,7 @@ March:
     - started building code blocks.
   * week 2:
     - preparing and preprocessing EEG and eye-tracking datasets.
+    - run two baselines for the SA tasks using adapter-based framework.
 
 
 April:
