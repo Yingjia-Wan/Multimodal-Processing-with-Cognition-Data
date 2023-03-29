@@ -1,0 +1,15 @@
+2023-03-29 06:00:41.240081: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-03-29 06:00:41.243292: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-03-29 06:00:41.276633: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-03-29 06:00:41.276923: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-03-29 06:00:46.321835: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[nltk_data] Downloading package stopwords to
+[nltk_data]     /mnt/nas_home/yw611/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+Traceback (most recent call last):
+  File "create_modeling_data.py", line 19, in <module>
+    res_dict = dcu.create_all_subjects_data("Sentence_level_data/Sentence_data", eeg_format)
+  File "/mnt/nas_home/yw611/thesis/sentiment-analysis/preprocessing/data_creation_utils.py", line 219, in create_all_subjects_data
+    print("Data saved in file " + subject_file)
+FileNotFoundError: [Errno 2] No such file or directory: 'Sentence_level_data/Sentence_data_ZAB.pickle'
