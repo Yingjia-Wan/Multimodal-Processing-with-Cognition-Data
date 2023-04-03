@@ -14,7 +14,7 @@ March:
     - run two baselines for the SA tasks using adapter-based framework. (see `adapter-text-classfication`)
 
 April:
-  * week 3
+  * week 3 cleaning out cognition features; dimensionality mappnig;
   * week 4
   * week 5
   * week 6
