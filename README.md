@@ -1,5 +1,5 @@
 # Multimodal-Processing-with-Cognition-Data
-Codes and intermedia reports for the ongoing Mphil dissertation by Yingjia Wan in 2023. Repo is made public merely for supervision purpose.
+Incomplete codes and intermediate reports for the ongoing Mphil dissertation by Yingjia Wan in 2023. Repo is made public merely for supervision purpose.
 
 For reports see: https://drive.google.com/drive/folders/1riuy-NAxw2JS4s-4GJKDLD5zb9JjCjkN?usp=sharing
 
