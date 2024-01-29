@@ -1,4 +1,5 @@
 # Multimodal-Processing-with-Cognition-Data
-Incomplete codes and intermediate reports for the ongoing Mphil dissertation by Yingjia Wan in 2023. Unfinished repo.
+Repo for Master's Dissertation and working paper: "Multimodal Prompt-Tuning with Human Cognition Data" by Yingjia Wan.
+Unfinished repo. The implementation code will be uploaded upon conference submission.
 
-For reports see: https://drive.google.com/drive/folders/1riuy-NAxw2JS4s-4GJKDLD5zb9JjCjkN?usp=sharing
+
