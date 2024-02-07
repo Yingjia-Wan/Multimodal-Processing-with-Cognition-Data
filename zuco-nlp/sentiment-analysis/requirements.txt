@@ -1,0 +1,17 @@
+tensorflow == 2.12.0
+tensorboard
+tensorflow-addons == 0.21.0
+tflearn == 0.5.0
+h5py
+matplotlib
+mxnet
+nltk
+numpy
+pandas
+scikit-learn
+scipy
+seaborn
+setuptools
+statsmodels
+wheel
+tensorflow-text

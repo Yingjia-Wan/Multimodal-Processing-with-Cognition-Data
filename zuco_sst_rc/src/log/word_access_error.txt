@@ -1,0 +1,113 @@
+Extracting: ZAB EEG.
+ZAB word_access_error: 0.
+ZAB eeg_access_error: 1968. 
+
+Extracting: ZDM EEG.
+ZDM word_access_error: 0.
+ZDM eeg_access_error: 2717. 
+
+Extracting: ZGW EEG.
+KeyError: 3
+Failed to get word-level 'content' from ZGW. word 3 in sentence 40: Reassuring, retro uplifter.
+KeyError: 6
+Failed to get word-level 'content' from ZGW. word 6 in sentence 41: Flaccid drama and exasperatingly slow journey.
+ZGW word_access_error: 2.
+ZGW eeg_access_error: 2337. 
+
+Extracting: ZJM EEG.
+KeyError: 4
+Failed to get word-level 'content' from ZJM. word 4 in sentence 353: Gollum's `performance' is incredible!
+ZJM word_access_error: 1.
+ZJM eeg_access_error: 1604. 
+
+Extracting: ZJN EEG.
+ZJN word_access_error: 0.
+ZJN eeg_access_error: 1422. 
+
+Extracting: ZJS EEG.
+ZJS word_access_error: 0.
+ZJS eeg_access_error: 2282. 
+
+Extracting: ZKB EEG.
+ZKB word_access_error: 0.
+ZKB eeg_access_error: 2248. 
+
+Extracting: ZKH EEG.
+ZKH word_access_error: 0.
+ZKH eeg_access_error: 2060. 
+
+Extracting: ZKW EEG.
+ZKW word_access_error: 0.
+ZKW eeg_access_error: 1835. 
+
+Extracting: ZMB EEG.
+ZMB word_access_error: 0.
+ZMB eeg_access_error: 2745. 
+
+Extracting: ZPH EEG.
+ZPH word_access_error: 0.
+ZPH eeg_access_error: 2359. 
+
+Extracting: ZAB ET.
+ZAB word_access_error: 0.
+ZAB et_null_error: 1968.
+ZAB et_access_error: 0. 
+
+Extracting: ZDM ET.
+ZDM word_access_error: 0.
+ZDM et_null_error: 2717.
+ZDM et_access_error: 0. 
+
+Extracting: ZGW ET.
+KeyError: 3
+Failed to get word-level 'content' from ZGW. word 3 in sentence 40: Reassuring, retro uplifter.
+KeyError: 6
+Failed to get word-level 'content' from ZGW. word 6 in sentence 41: Flaccid drama and exasperatingly slow journey.
+ZGW word_access_error: 2.
+ZGW et_null_error: 2335.
+ZGW et_access_error: 2. 
+
+Extracting: ZJM ET.
+KeyError: 4
+Failed to get word-level 'content' from ZJM. word 4 in sentence 353: Gollum's `performance' is incredible!
+ZJM word_access_error: 1.
+ZJM et_null_error: 1603.
+ZJM et_access_error: 1. 
+
+Extracting: ZJN ET.
+ZJN word_access_error: 0.
+ZJN et_null_error: 1422.
+ZJN et_access_error: 0. 
+
+Extracting: ZJS ET.
+ZJS word_access_error: 0.
+ZJS et_null_error: 2282.
+ZJS et_access_error: 0. 
+
+Extracting: ZKB ET.
+ZKB word_access_error: 0.
+ZKB et_null_error: 2248.
+ZKB et_access_error: 0. 
+
+Extracting: ZKH ET.
+ZKH word_access_error: 0.
+ZKH et_null_error: 2060.
+ZKH et_access_error: 0. 
+
+Extracting: ZKW ET.
+ZKW word_access_error: 0.
+ZKW et_null_error: 1835.
+ZKW et_access_error: 0. 
+
+Extracting: ZMB ET.
+ZMB word_access_error: 0.
+ZMB et_null_error: 2745.
+ZMB et_access_error: 0. 
+
+Extracting: ZPH ET.
+ZPH word_access_error: 0.
+ZPH et_null_error: 2359.
+ZPH et_access_error: 0. 
+
+Successfully saved subject tsv files for task SA in ../results/subject_tsv/SA/eeg_tsv and ../results/subject_tsv/SA/gaze_tsv. 
+
