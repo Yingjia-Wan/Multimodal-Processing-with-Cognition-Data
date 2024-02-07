@@ -50,7 +50,7 @@ import pprint
 # import yaml
 
 
-ZNLP = "../../zuco-nlp"
+ZNLP = "zuco_data_storage"
 ztokenizer = TreebankWordTokenizer()
 #texts = [" ".join(ztokenizer.tokenize(s)) for s in texts]
 task = 'SA' # switch between 'SA' and 'RC'.
@@ -107,9 +107,6 @@ gaze_tsv_path = os.path.join(tsv_path, "gaze_tsv")
 if not os.path.exists(gaze_tsv_path):
     os.makedirs(gaze_tsv_path)
 
-
-
-'''
 
 #### 1. Convert subject pickles to dfs, then to .tsv (save per subject in SUBJECT_NAMES) 
 # # see pkl file for details if confused. - YW
@@ -281,7 +278,7 @@ for subject in SUBJECT_NAMES:
 
 print(f'Successfully saved subject tsv files for task {task} in {eeg_tsv_path} and {gaze_tsv_path}.', '\n')
 
-'''
+
 
 """##### 2. Organize the tsv values to np, transforms tsv to df with the first null column dropped, and gather all subjects df in a list: dfs.
 """
@@ -315,7 +312,7 @@ dfs_eeg = get_allsubs_dfs(mod = 'eeg')
 # print('ZAB EEG:','\n', dfs_eeg[0].head(3))
 
 # print(f'eegvals of ZAB EEG df:', '\n', dfs_eeg[0].iloc[:, -1])
-# print(f'Type of eegvals of ZAB EEG df:', '\n', type(dfs_eeg[0].iloc[:, -1])) # TODO: check the eegvals type. - YW
+# print(f'Type of eegvals of ZAB EEG df:', '\n', type(dfs_eeg[0].iloc[:, -1]))
 print(f"The number of columns in ZAB ET df is: {dfs_et[0].shape[1]}.")
 
 
