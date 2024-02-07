@@ -61,9 +61,10 @@ In a nutshell, the COGMAPL model consists of several components:
     The decoder-based LM (e.g., GPT-2) is added with a classfication head to perform the sentiment analysis task.
 
 
-## Acknowledgements
-- A part of the code is adapted from the Github repository:
-https://github.com/mair-lab/mapl/blob/main/mapl.py about the MAPL model built by Oscar Mañas, et al., 2023.
+[Acknowledgements]:
+
+- A part of the architecture code takes reference from the Github repo:
+https://github.com/mair-lab/mapl/blob/main/mapl.py about the MAPL framework built by Oscar Mañas, et al., 2023.
 
 - GPT2ForSequenceClassification is from Huggingface:
 https://huggingface.co/transformers/v4.8.0/_modules/transformers/models/gpt2/modeling_gpt2.html#GPT2ForSequenceClassification
