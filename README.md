@@ -8,19 +8,19 @@ The objectives description will be supplemented upon conference submission.
 
 
 
-# Data
-- The original ZuCo corpus is available at https://osf.io/uxamg/.
+# Data Source
+- The original ZuCo corpus is available at https://osf.io/uxamg/. As the data files were of large size, I recommend downloading efficiently using my code at `./zuco_preprocessing/src/zuco_matfiles_download.py`. See systematic instructions below.
 
-- This project also requires a `zuco_data_storage` folder inside the current dir, which is imported from https://github.com/DS3Lab/zuco-nlp/tree/master by Nora Hollenstein. I rename the folder name `zuco-nlp` to `zuco_data_storage`. Please refer to the [README.md](./zuco_data_storage/README.md) in the folder for acknowledgement details.
+- This project also requires a `zuco_data_storage` folder inside the current dir, which is imported from https://github.com/DS3Lab/zuco-nlp/tree/master by Nora Hollenstein. I rename the folder name `zuco-nlp` to `zuco_data_storage`. Please refer to the [README.md](./zuco_data_storage/README.md) in the `zuco_data_storage` folder for details.
 
 
 # Instructions
 
 ## 0. Requirements
-Please refer to the README.md in each folder for the instructions of setting up the environment for each step.
+Please refer to the subsequent README.md files in each folder for the instructions of setting up the environment for each step.
 
 ## 1. Data Preprocessing
-First, go to the [README.md](./zuco_preprocessing/README.md) in the folder `zuco_preprocessing` for data preprocessing instructions.
+First, please refer to the [README.md](./zuco_preprocessing/README.md) in the folder `zuco_preprocessing` for data formatting and preprocessing instructions.
 ## 2. Experiment 1
 Please refer to the [README.md]() in the folder `AddToken_Method` for the instructions of Experiment 1.
 ## 3. Experiment 2
