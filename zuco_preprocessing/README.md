@@ -1,20 +1,24 @@
 # Acknowledgement
-The zuco_sst_rc data folder preprocesses the .mat data to .tsv files by performing downloading, organizing on the word-level, converting file formats, etc.
+The zuco_preprocessing folder van be used to extract task-specific word-level gaze and EEG datasets from the ZUCO dataset. It preprocesses the .mat data to .tsv files by performing downloading, organizing on the word-level, converting file formats, etc.
 
-- This project folder 'zuco_sst' derives from https://drive.google.com/drive/folders/1_zJRdPai1Y9NQkutPvqjUwb2Rs0qt6l1?usp=drive_link, and can be used to derive task-specific word-level gaze and EEG datakets from the ZUCO dataset. However, another execution python file is added in the dir as the executing file (), which is also referenced from Erick Mcguire: https://colab.research.google.com/drive/1q6InysgFbFq5I2ULuBa91krkktvcJ4fe?usp=sharing, but with extensive changes made as addressed below.
+- A part of this code refers to https://drive.google.com/drive/folders/1_zJRdPai1Y9NQkutPvqjUwb2Rs0qt6l1?usp=drive_link and https://colab.research.google.com/drive/1q6InysgFbFq5I2ULuBa91krkktvcJ4fe?usp=sharing by Erick Mcguire. However, extensive changes made as addressed below.
 
-- The original ZuCo dataset is available at https://osf.io/uxamg/
+- The original ZuCo corpus is available at https://osf.io/uxamg/
 
-- This project also requires a zuco-nlp folder parallel to the current dir (zuco_sst_rc), which is downloaded from https://github.com/DS3Lab/zuco-nlp/tree/master
+- This project also requires a `zuco_data_storage` folder parallel to the current dir, which is downloaded from https://github.com/DS3Lab/zuco-nlp/tree/master. I rename the folder name `zuco-nlp` to `zuco_data_storage`.
 
 # Instructions for data preprocessing:
-1. download matlab files (very large) from ZuCo by running code in the folder `zuco_preprocessing/src`: `zuco_matfiles_download.py`. The matfiles are saved in the folder `zuco_data_storage/XXXXX/Data_to_preprocess`.
+### 1. Download:
+Download matlab files (very large) from ZuCo by running code in the folder `zuco_preprocessing/src`: `zuco_matfiles_download.py`. The matfiles will be saved in the folder `zuco_data_storage/XXXXX/Data_to_preprocess`. (Mannual download is not recommended due to the large size of the files.)
 
 
-2. transform the matfiles into pkl files, using code in the folder e.g, `zuco_data_storage/sentiment-analysis/`: `create_modeling_data.py`.
+### 2. Convert:
+Convert the matfiles into pkl files, using code in the folder e.g, `zuco_data_storage/sentiment-analysis/`: `create_modeling_data.py`.
 This will create the pkl files for each subject in the subfolder `../Result_files`
 
-3. transform the subject-pkl files into merged csv files averaging over all subjects, create word-level gaze and EEG datasets, by running code in the folder `zuco_preprocessing/src`: `zuco_preprocessing_SST_RC.py`.
+### 3. Merge:
+
+Merge the subject-pkl files into csv files averaging over all subjects, create word-level gaze and EEG datasets, by running code in the folder `zuco_preprocessing/src/zuco_preprocessing_SST_RC.py`.
 The result avg.tsv files are saved in the folder `zuco_preprocessing/results`.
 
 Then they are ready to be finally grouped as .pt, suitable as training/testing/dev data for method1 (folder 'AddToken_Method') and medthod2 (folder 'COGMAP')
