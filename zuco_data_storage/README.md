@@ -7,16 +7,11 @@ https://arxiv.org/abs/1904.02682"
 
 Please also cite the above paper if you use the code in this folder.
 
-## Data
-
-You will need the following data. 
-- The ZuCo data in their latest (January 2019) format (https://osf.io/uxamg/).
-	- The data must be placed in the `Data_to_preprocess/` folder.
-	- They can be efficiently downloaded using the code from the paralell folder zuco_preprocessing by Yingjia Wan. Mannual download is not recommended due to the large size of the files.
 
 
 
-## Setp up and Code
+
+## Setp up & Instructions
 
 1. You will need an python=3.8 environment with the packages in requirements.txt
 
