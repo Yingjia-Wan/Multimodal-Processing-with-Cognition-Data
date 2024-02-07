@@ -47,19 +47,27 @@ The data_grouping.py will generate .pt data for training. For each sample it con
 
 # CogMAPL Architecture
 
-The CogMAPL architecture is specified in COGMAPL_SequenceClassificatin.py. Miscellaneous functions are in utils.py and in dataset.py.
+The CogMAPL structure is specified in `COGMAPL_decoder.py`. Miscellaneous functions are in `utils.py` and `dataset.py`. 
+
+In a nutshell, the COGMAPL model consists of several components:
+
+    1. A special tokenizer:
+    adjusted to be able to accept both cognition data and textual data.
+
+    2. A Projection Layer: 
+    added so that the cognition data can be projected to the same dimension as the word embeddings of the baseLM.
+
+    3. baseLM: 
+    The decoder-based LM (e.g., GPT-2) is added with a classfication head to perform the sentiment analysis task.
 
 
 ## Acknowledgements
-A part of the code is adapted from the Github repository:
-https://github.com/mair-lab/mapl/blob/main/mapl.py for the MAPL model by Oscar Mañas, et al., 2023.
+- A part of the code is adapted from the Github repository:
+https://github.com/mair-lab/mapl/blob/main/mapl.py about the MAPL model built by Oscar Mañas, et al., 2023.
 
-For adaptation, check the backbone model for function calls and arguments:
-GPT2ForSequenceClassification:
+- GPT2ForSequenceClassification is from Huggingface:
 https://huggingface.co/transformers/v4.8.0/_modules/transformers/models/gpt2/modeling_gpt2.html#GPT2ForSequenceClassification
 https://huggingface.co/transformers/v4.8.0/model_doc/gpt2.html#gpt2forsequenceclassification
-
-
 
 
 # Training & Evaluation
