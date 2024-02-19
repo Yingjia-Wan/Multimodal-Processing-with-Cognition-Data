@@ -3,13 +3,8 @@ Repo for Master's Dissertation and working paper: "Multimodal Prompt-Tuning with
 
 The implementation code will be fully uploaded upon conference submission.
 
-# Objective
-The objectives description will be supplemented upon conference submission.
-
-
-
 # Data Source
-- The original ZuCo corpus is available at https://osf.io/uxamg/. As the data files were of large size, I recommend downloading efficiently using my code at `./zuco_preprocessing/src/zuco_matfiles_download.py`. See systematic instructions below.
+- The original ZuCo corpus is available at https://osf.io/uxamg/. As the data files were large, I recommend downloading them efficiently using my code at `./zuco_preprocessing/src/zuco_matfiles_download.py`. See systematic instructions below.
 
 - This project also requires a `zuco_data_storage` folder inside the current dir, which is imported from https://github.com/DS3Lab/zuco-nlp/tree/master by Nora Hollenstein. I rename the folder name `zuco-nlp` to `zuco_data_storage`. Please refer to the [README.md](./zuco_data_storage/README.md) in the `zuco_data_storage` folder for details.
 
