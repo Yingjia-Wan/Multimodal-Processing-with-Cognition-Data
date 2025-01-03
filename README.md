@@ -1,7 +1,5 @@
 # Multimodal-Processing-with-Cognition-Data
-Repo for Master's Dissertation and working paper: "Multimodal Prompt-Tuning with Human Cognition Data" by Yingjia Wan.
-
-The implementation code will be fully uploaded upon conference submission.
+Implementation code for my Master's Dissertation: "Multimodal Prompt-Tuning with Human Cognition Data" by Yingjia Wan.
 
 # Data Source
 - The original ZuCo corpus is available at https://osf.io/uxamg/. As the data files were large, I recommend downloading them efficiently using my code at `./zuco_preprocessing/src/zuco_matfiles_download.py`. See systematic instructions below.
