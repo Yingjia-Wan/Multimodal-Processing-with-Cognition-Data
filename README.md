@@ -7,14 +7,10 @@ Implementation code for my Master's Dissertation: "Multimodal Prompt-Tuning with
 - This project also requires a `zuco_data_storage` folder inside the current dir, which is imported from https://github.com/DS3Lab/zuco-nlp/tree/master by Nora Hollenstein. I rename the folder name `zuco-nlp` to `zuco_data_storage`. See [README.md](./zuco_data_storage/README.md) in the `zuco_data_storage` folder for details.
 
 
-# Instructions
-
-Please refer to the subsequent README.md files in each folder for the instructions of setting up the environment for each step.
-
-## Data Preprocessing
+# Preprocessing
 First, please refer to the [README.md](./zuco_preprocessing/README.md) in the folder `zuco_preprocessing` for data formatting and preprocessing instructions.
 
-## CogMAP
-Please refer to the [README.md](./CogMAP/README.md) in the folder `COGMAP` for the instructions of Experiment 2.
+# CogMAP
+Please refer to the [README.md](./CogMAP/README.md) in the folder `COGMAP`.
 
 
