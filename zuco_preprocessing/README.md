@@ -1,5 +1,5 @@
 # Overview
-The `zuco_preprocessing` section aims to extract task-specific word-level gaze and EEG data from the ZUCO corpus. It preprocesses the .mat data to .tsv files by performing downloading, organizing on the word-level, converting file formats, etc. The original ZuCo corpus is available at https://osf.io/uxamg/.
+The `zuco_preprocessing` section aims to extract task-specific word-level gaze and EEG data from the ZUCO corpus, which will be suitable as training/testing/dev data later for prompt-tuning. It preprocesses the .mat data to .tsv files by performing downloading, organizing on the word-level, converting file formats, etc. The original ZuCo corpus is available at https://osf.io/uxamg/.
 
 # Instructions for data preprocessing:
 ### 1. Download:
@@ -12,8 +12,6 @@ This will create the pkl files for each SUBJECT_ID in the subfolder `../Result_f
 ### 3. Merge:
 
 Merge the subject-pkl files into csv files averaging over all subjects, create word-level gaze and EEG datasets **across subjects**, by running `zuco_preprocessing/src/zuco_preprocessing_SST_RC.py`. The result avg.tsv files are saved in the folder `zuco_preprocessing/results`.
-
-Then they are ready to be finally grouped as .pt, suitable as training/testing/dev data for method1 ('AddToken_Method') and medthod2 ('COGMAP').
 
 ### Additional notes:
 1. NR stands for normal reading from the osf ZUCO folder; RC for relation classification; SA for sentiment analysis.
