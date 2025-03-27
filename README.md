@@ -13,7 +13,6 @@ Implementation code for my Master's Dissertation: "Multimodal Prompt-Tuning with
 conda create -n mapl python=3.8
 conda activate mapl
 
-#install PyTorch
 conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
 conda install scikit-learn
 conda install jupyter
@@ -34,14 +33,15 @@ First, please refer to the [README.md](./zuco_preprocessing/README.md) in the fo
 
 After preproessing, the preprocessed .tsv data were saved in `zuco_preprocessing/results`. You can move the data file to the `data/cognition_data` folder in the current directory for convenience.
 
-## B. Preparing data for training
+### B. Preparing data for training
 1. run `splitting _indices.py`
     - set splitting ratio and random seed
     - if k-fold cross validation, the dataset will be only split into train (later containig both train and dev) and test set.
-3. run `data_grouping.py` to generate train, val and test set of ET, EEG, and ET+EEG data.
+2. run `data_grouping.py` to generate train, val and test set of ET, EEG, and ET+EEG data.
 
-## C. Data format
-The data_grouping.py will generate .pt data for training. For each sample it contains:
+### C. Data Format
+
+Afer the steps above, you have have .pt data for training. Each datapoint contains:
 
   `"idx"`: int of the sentence index in the original dataset,
   
@@ -52,19 +52,19 @@ The data_grouping.py will generate .pt data for training. For each sample it con
   `"label"`: str, negative/positive/neutral
 
 
-## CogMAPL Model Architecture
+## Model Architecture
 
 The CogMAPL architecture is specified in `COGMAPL_decoder.py`. Miscellaneous functions are in `utils.py` and `dataset.py`. 
 
 In a nutshell, the COGMAPL model consists of three key components:
 
-1. A special tokenizer:
-adjusted to be able to accept both cognition data and textual data.
+- **A special tokenizer**:
+adjusted to accept both cognition data and textual data.
 
-2. A Projection Layer: 
-added so that the cognition data can be projected to the same dimension as the word embeddings of the baseLM. The layer takes reference from the [MAPL](https://github.com/mair-lab/mapl/blob/main/mapl.py) framework.
+- **A Projection Layer**: 
+added on top of the base LM, to project the cognition data to the same dimension as the word embeddings of the baseLM. This takes reference from the [MAPL](https://github.com/mair-lab/mapl/blob/main/mapl.py) framework.
 
-3. base LM: 
+- **base LM**: 
 The decoder-based LM (e.g., GPT-2) is added with a classfication head to perform the sentiment analysis task.(e.g., [GPT2ForSequenceClassification](https://huggingface.co/transformers/v4.8.0/model_doc/gpt2.html#gpt2forsequenceclassification))
 
 
